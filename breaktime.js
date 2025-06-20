@@ -80,7 +80,7 @@ export class BreakTime {
             let currentlyPlaying = ui.playlists._playingSounds.map(ps => ps.playing ? ps.uuid : null).filter(p => !!p);
             for (let playing of currentlyPlaying) {
                 let sound = await fromUuid(playing);
-                sound.update({ playing: false, pausedTime: sound.sound.currentTime });
+                // sound.update({ playing: false, pausedTime: sound.sound.currentTime });
             }
             await game.settings.set("breaktime", "currently-playing", currentlyPlaying);
 
