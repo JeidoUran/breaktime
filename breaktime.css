@@ -109,12 +109,11 @@ form .notes.break-start {
 }
 
 .breaktime-button {
-  border-top: 1px solid;
   border-bottom: 1px solid;
   text-align: center;
   padding-top: 4px;
   padding-bottom: 4px;
-  margin-top: 4px;
+  margin-top: 1px;
 }
 
 #players .player.player-away::before {
